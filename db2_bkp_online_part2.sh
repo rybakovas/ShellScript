@@ -51,7 +51,7 @@ rm -f $strDSMI_DIR/CheckDBDirectory.log
     echo ""`date "+[%d/%m/%Y-%H:%M:%S] : "` >> $strDSMI_DIR/db2_${1}_backup_error_${strDateHour}.log
     echo `date "+[%d/%m/%Y-%H:%M:%S] : "`"Warning on Online Backup! For instance ${db2instance}! There is no Local Database or the database directory cannot be found on the indicated file system. Contact DB2 TEAM" >> $strDSMI_DIR/db2_${1}_backup_error_${strDateHour}.log
     echo `date "+[%d/%m/%Y-%H:%M:%S] : "`"=============================================================================" >> $strDSMI_DIR/db2_${1}_backup_error_${strDateHour}.log
-    continue #If find error go to next instance
+    
     fi
 #======================= Check just Indirect DB Directory - FINISH===============================#
 
